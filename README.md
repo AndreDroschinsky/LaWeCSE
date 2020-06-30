@@ -15,9 +15,9 @@ An exemplary weight function is 'weight_function', to be added with '-l weight_f
 The labels are _string_ labels, the same is true for the graph file
 
 An exemplary graph file 'example.fog' is also attached. The file format is 3 lines per graph:
-# <any name; used in output of LaWeCSE> <number of nodes N> <number of edges M>
-<label node 1> ... <label node N> 
-M triples of <start node> <end node> <edge label>
+1) #name, used in output of LaWeCSE; number of nodes N; number of edges M
+label node 1; ... ; label node N 
+M triples of: start node; end node; edge label
 
 It also accepts .gml files.
 
