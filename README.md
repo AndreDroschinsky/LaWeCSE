@@ -4,14 +4,16 @@ Computes BBP-MCISs; allows to skip vertices as in Largest Weight Common Subtree 
 1) download and build OGDF; at least an out-of-source build into a 'Release'-folder, standard settings should suffice
 (https://ogdf.uos.de/download/ ; Catalpa 2020-02-09) 
 2) set correct OGDF_Path in CMakeLists.txt of 'LaWeCSE', this should be the OGDF-directory containing the README.md
-2a) if you did not create a Release-Folder as ouf-of-source build, set that path accordingly in the 1., 2., and 4. row from below
-3) run cmake, then make
+3) if you did not create a Release-Folder as ouf-of-source build, set that path accordingly in the 1., 2., and 4. row from below
+4) run cmake, then make
 
 For a list of parameters type ./LaWeCSE --help
+
 Example:
 ./LaWeCSE -c example.fog 1 2
 
-An exemplary weight function is 'weight_function', to be added with '-l weight_function'
+An exemplary weight function is 'weight_function', to be added with '-l weight_function'.
+
 The labels are _string_ labels, the same is true for the graph file
 
 An exemplary graph file 'example.fog' is also attached. The file format is 3 lines per graph:
