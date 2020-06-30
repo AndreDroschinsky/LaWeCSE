@@ -2,7 +2,7 @@
 Computes BBP-MCISs; allows to skip vertices as in Largest Weight Common Subtree Embedding
 
 1) download and build OGDF; at least an out-of-source build into a 'Release'-folder, standard settings should suffice
-(https://ogdf.uos.de/download/ ; Catalpa 2020-02-09) 
+(https://ogdf.uos.de/download/ ; Catalpa 2020-02-09) , see below
 2) set correct OGDF_Path in CMakeLists.txt of 'LaWeCSE', this should be the OGDF-directory containing the README.md
 3) if you did not create a Release-Folder as ouf-of-source build, set that path accordingly in the 1., 2., and 4. row from below
 4) run cmake, then make
@@ -30,4 +30,16 @@ Additionally this software supports skipped vertices, cf. 'Largest Weight Common
 
 In case the input is not outerplanar, we compute a mapping between blocks of which at least one is not outerplanar based on a clique approach (see 'An algorithm for reporting maximal c-cliques' from Frédéric Cazals, Chinmay Karande)
 
+---
+Exemplary OGDF Setup
+
+To install OGDF, first unpack it (link above), then within the OGDF directory perform the following steps
+1) mkdir Release
+2) cd Release
+3) ccmake ../
+4) type c, then g (make sure 'release' type build is selected)
+5) cmake .
+6) make
+
+Then, this Release directory is the one to specify in the LaWeCSE cmake as above.
 
