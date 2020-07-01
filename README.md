@@ -39,7 +39,8 @@ To install OGDF, first unpack it (link above), then within the OGDF directory pe
 3) ccmake ../
 4) type c, then g (make sure 'release' type build is selected)
 5) cmake .
-6) make
+6) _instead of_ performing steps 3 to 5, you may just type cmake ../ for a standard build.
+7) make
 
 Then, this Release directory is the one to specify in the LaWeCSE cmake as above.
 
