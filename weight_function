@@ -1,4 +1,4 @@
-// weigts are doubles, with '-' for "not possible"; labels are strings; separate entries by ';'
+// weights are doubles, with '-' for "not possible"; labels are strings; separate entries by ';'
 // default weights for same and different node labels
 DEFAULT_NODE 1.0 ; -
 // default weights for same and different edge labels
