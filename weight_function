@@ -1,18 +1,25 @@
-// weights are doubles, with '-' for "not possible"; labels are strings; separate entries by ';'
+// weights are doubles, with '-' for "forbidden"; labels are strings;
+//  separate entries by ';'
+
 // default weights for same and different node labels
 DEFAULT_NODE 1.0 ; -
 // default weights for same and different edge labels
 DEFAULT_EDGE 0.0 ; -
 
 // label pair weight L <L1>;<L2>;<weight>
-// Sets w(L1,L2)=weight; example:
-//L C;O;0.5
+//  Sets w(L1,L2)=weight; example:
+// L C;O;0.5
+//  this sets w(C,O)=0.5
 
-// target label vector TARGET <L1>;...;<Ln>, used for weight vector V (see next), example:
-//TARGET C;O;N
+// target label vector TARGET <L1>;...;<Ln>, used for
+//  weight vector V (see next), example:
+// TARGET C;O;N
 
 // weight vector V <L>;<weight1>;...;<weightn>
-// set w(C,L1)=weight1,...,w(C,Ln)=weightn, empty entries ';;' are skipped; example:
-//V C;   ;0.1
-//V O;0.5;1  ;0
+//  set w(L,L1)=weight1,...,w(C,Ln)=weightn,
+//  empty entries ';;' are skipped; examples:
+// V O;0.5;1  ;0
+//  this sets w(O,C)=0.5; w(O,O)=1; w(O,N)=0
+// V C;   ;0.1
+//  this sets w(C,O)=0.1
 
