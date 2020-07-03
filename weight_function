@@ -21,5 +21,5 @@ DEFAULT_EDGE 0.0 ; -
 // V O;0.5;1  ;0
 //  this sets w(O,C)=0.5; w(O,O)=1; w(O,N)=0
 // V C;   ;0.1
-//  this sets w(C,O)=0.1
+//  this sets w(C,O)=0.1 and keeps defaults for w(C,C) and w(C,N)
 
