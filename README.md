@@ -19,9 +19,11 @@ The labels are _string_ labels, the same is true for the graph file
 An exemplary graph file 'example.fog' is also attached. The file format is 3 lines per graph:
 1) #name, used in output of LaWeCSE; number of nodes N; number of edges M
 2) label node 1; ... ; label node N 
-3) M triples of: start node; end node; edge label
+3) M triples of: start node number; end node number; edge label
 
-It also accepts .gml files.
+The node numbers start at 1.
+
+It also accepts GML files.
 
 ------
 With this software you may compute maximum common induced subgraphs between two input graphs, as described in 'Finding Largest Common Substructures of Molecules in Quadratic Time', http://link.springer.com/chapter/10.1007/978-3-319-51963-0_24
